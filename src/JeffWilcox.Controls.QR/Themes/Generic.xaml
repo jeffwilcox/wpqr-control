@@ -1,0 +1,34 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:jw="clr-namespace:JeffWilcox.Controls"
+    mc:Ignorable="d">
+    <Style TargetType="jw:QRCodeScanner">
+        <Setter Property="BorderBrush" Value="{StaticResource PhoneAccentBrush}"/>
+        <Setter Property="BorderThickness" Value="12"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="jw:QRCodeScanner">
+                    <Border
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="{TemplateBinding Padding}">
+                        <Rectangle>
+                            <Rectangle.Fill>
+                                <VideoBrush x:Name="VideoBrush">
+                                    <VideoBrush.RelativeTransform>
+                                        <CompositeTransform CenterX=".5" CenterY=".5" />
+                                    </VideoBrush.RelativeTransform>
+                                </VideoBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

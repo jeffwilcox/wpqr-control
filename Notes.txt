@@ -1,0 +1,51 @@
+﻿This is a Silverlight port of the csharp ZXing port created by Suraj Supekar at revision 1202 in the SVN repository.
+This is the core ZXing library and should be compatible with both Silverlight 3/4 and Windows Phone 7.
+For more details see http://silverlightzxing.codeplex.com/
+
+TODO:
+-Update the following files to be compatible (IE: Remove array lists, fix issues with dictionary class, etc)
+These files are included in the source code but are not included in the project as they are not compatible with Silverlight
+	<Compile Include="client\result\AbstractDoCoMoResultParser.cs" />
+    <Compile Include="client\result\AddressBookAUResultParser.cs" />
+    <Compile Include="client\result\AddressBookDoCoMoResultParser.cs" />
+    <Compile Include="client\result\AddressBookParsedResult.cs" />
+    <Compile Include="client\result\BizcardResultParser.cs" />
+    <Compile Include="client\result\BookmarkDoCoMoResultParser.cs" />
+    <Compile Include="client\result\CalendarParsedResult.cs" />
+    <Compile Include="client\result\EmailAddressParsedResult.cs" />
+    <Compile Include="client\result\EmailAddressResultParser.cs" />
+    <Compile Include="client\result\EmailDoCoMoResultParser.cs" />
+    <Compile Include="client\result\GeoParsedResult.cs" />
+    <Compile Include="client\result\GeoResultParser.cs" />
+    <Compile Include="client\result\ISBNParsedResult.cs" />
+    <Compile Include="client\result\ISBNResultParser.cs" />
+    <Compile Include="client\result\optional\AbstractNDEFResultParser.cs" />
+    <Compile Include="client\result\optional\NDEFRecord.cs" />
+    <Compile Include="client\result\optional\NDEFSmartPosterParsedResult.cs" />
+    <Compile Include="client\result\optional\NDEFSmartPosterResultParser.cs" />
+    <Compile Include="client\result\optional\NDEFTextResultParser.cs" />
+    <Compile Include="client\result\optional\NDEFURIResultParser.cs" />
+    <Compile Include="client\result\ParsedResult.cs" />
+    <Compile Include="client\result\ParsedResultType.cs" />
+    <Compile Include="client\result\ProductParsedResult.cs" />
+    <Compile Include="client\result\ProductResultParser.cs" />
+    <Compile Include="client\result\ResultParser.cs" />
+    <Compile Include="client\result\SMSMMSResultParser.cs" />
+    <Compile Include="client\result\SMSParsedResult.cs" />
+    <Compile Include="client\result\TelParsedResult.cs" />
+    <Compile Include="client\result\TelResultParser.cs" />
+    <Compile Include="client\result\TextParsedResult.cs" />
+    <Compile Include="client\result\URIParsedResult.cs" />
+    <Compile Include="client\result\URIResultParser.cs" />
+    <Compile Include="client\result\URLTOResultParser.cs" />
+    <Compile Include="client\result\VCardResultParser.cs" />
+    <Compile Include="client\result\VEventResultParser.cs" />
+    <Compile Include="MultiFormatReader.cs" />
+    <Compile Include="MultiFormatWriter.cs" />
+    <Compile Include="multi\ByQuadrantReader.cs" />
+    <Compile Include="multi\GenericMultipleBarcodeReader.cs" />
+    <Compile Include="multi\MultipleBarcodeReader.cs" />
+    <Compile Include="multi\qrcode\detector\MultiDetector.cs" />
+    <Compile Include="multi\qrcode\detector\MultiFinderPatternFinder.cs" />
+    <Compile Include="multi\qrcode\QRCodeMultiReader.cs" />
+    
