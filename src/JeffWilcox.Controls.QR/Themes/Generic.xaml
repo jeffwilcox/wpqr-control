@@ -19,7 +19,7 @@
                         Padding="{TemplateBinding Padding}">
                         <Rectangle>
                             <Rectangle.Fill>
-                                <VideoBrush x:Name="VideoBrush">
+                                <VideoBrush x:Name="VideoBrush" Stretch="None">
                                     <VideoBrush.RelativeTransform>
                                         <CompositeTransform CenterX=".5" CenterY=".5" />
                                     </VideoBrush.RelativeTransform>

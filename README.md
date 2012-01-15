@@ -7,8 +7,11 @@ For Windows Phone 7.5 (this library targets the Windows Phone 7.1 SDK)
 ## Credits
 
 Control implementation created by Jeff Wilcox
+
 Sample code and concept provided by Michael Osthege
+
 Based on the Silverlight zxing port (http://silverlightzxing.codeplex.com/)
+
 Uses the zxing multi-format barcode image processing library (http://code.google.com/p/zxing/)
 
 ## License
@@ -26,6 +29,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ## Changelog
+
+1.0.1:
+
+* Updates the generic XAML to not stretch the video brush (maintaining a natural aspect ratio)
 
 1.0:
 
