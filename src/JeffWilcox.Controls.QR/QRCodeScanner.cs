@@ -199,6 +199,12 @@ namespace JeffWilcox.Controls
             {
                 try
                 {
+                    // 2-2-2012 - Rowdy.nl
+                    // Focus the camera for better recognition of QR code's
+                    if (_photoCamera.IsFocusSupported)
+                        _photoCamera.Focus();
+                    // End Rowdy.nl
+                    
                     _photoCamera.GetPreviewBufferY(_luminanceSource.PreviewBufferY);
                     var binarizer = new HybridBinarizer(_luminanceSource);
                     var binaryBitmap = new BinaryBitmap(binarizer);
