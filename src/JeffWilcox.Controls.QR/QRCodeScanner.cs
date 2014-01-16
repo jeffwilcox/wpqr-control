@@ -112,6 +112,13 @@ namespace JeffWilcox.Controls
             _videoBrush.SetSource(_photoCamera);
         }
 
+        private void UninitializePhotoCamera()
+        {
+            _photoCamera.Initialized -= OnPhotoCameraInitialized;
+            _photoCamera.Dispose();
+            _photoCamera = null;
+        }
+
         protected virtual void OnError(Exception ex)
         {
             var handler = Error;
@@ -177,7 +184,8 @@ namespace JeffWilcox.Controls
             if (IsScanning)
             {
                 IsScanning = false;
-                _reader = null;
+                _reader = null;				
+                UninitializePhotoCamera();
             }
         }
 
